@@ -5,25 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
 <meta name="generator" content="Hexo 7.3.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/zhangpu-git.github.io/images/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/zhangpu-git.github.io/images/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/zhangpu-git.github.io/images/favicon-16x16.png">
-  <link rel="mask-icon" href="/zhangpu-git.github.io/images/logo.svg" color="#222">
+  <link rel="apple-touch-icon" sizes="180x180" href="/test.github.io/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/test.github.io/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/test.github.io/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/test.github.io/images/logo.svg" color="#222">
 
-<link rel="stylesheet" href="/zhangpu-git.github.io/css/main.css">
+<link rel="stylesheet" href="/test.github.io/css/main.css">
 
 
-<link rel="stylesheet" href="/zhangpu-git.github.io/lib/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="/test.github.io/lib/font-awesome/css/all.min.css">
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"github.com","root":"/zhangpu-git.github.io/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"zhangpu-git.github.io","root":"/test.github.io/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="本文关注 Floquet 理论公式推导。从周期性驱动系统的哈密顿量和薛定谔方程出发，用 Floquet 定理解本征值问题，经傅里叶展开获矩阵本征值问题并截断求解。简单介绍有效哈密顿量模型构建方法与应用。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Floquet理论公式推导(一)">
-<meta property="og:url" content="https://github.com/zhangpu-git.github.io/2025/03/01/Floquet-1/index.html">
+<meta property="og:url" content="https://zhangpu-git.github.io/test.github.io/2025/03/01/Floquet-1/index.html">
 <meta property="og:site_name" content="Zhang-Pu&#39;s Blog">
 <meta property="og:description" content="本文关注 Floquet 理论公式推导。从周期性驱动系统的哈密顿量和薛定谔方程出发，用 Floquet 定理解本征值问题，经傅里叶展开获矩阵本征值问题并截断求解。简单介绍有效哈密顿量模型构建方法与应用。">
 <meta property="og:locale" content="zh_CN">
@@ -33,7 +33,7 @@
 <meta property="article:tag" content="Floquet">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://github.com/zhangpu-git.github.io/2025/03/01/Floquet-1/">
+<link rel="canonical" href="https://zhangpu-git.github.io/test.github.io/2025/03/01/Floquet-1/">
 
 
 <script id="page-configurations">
@@ -99,7 +99,7 @@
 
   <div class="site-meta">
 
-    <a href="/zhangpu-git.github.io/" class="brand" rel="start">
+    <a href="/test.github.io/" class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
       <h1 class="site-title">Zhang-Pu's Blog</h1>
       <span class="logo-line-after"><i></i></span>
@@ -120,22 +120,22 @@
   <ul id="menu" class="main-menu menu">
         <li class="menu-item menu-item-home">
 
-    <a href="/zhangpu-git.github.io/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+    <a href="/test.github.io/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
 
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/zhangpu-git.github.io/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+    <a href="/test.github.io/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/zhangpu-git.github.io/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+    <a href="/test.github.io/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
 
   </li>
         <li class="menu-item menu-item-about">
 
-    <a href="/zhangpu-git.github.io/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+    <a href="/test.github.io/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
 
   </li>
       <li class="menu-item menu-item-search">
@@ -193,10 +193,10 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://github.com/zhangpu-git.github.io/2025/03/01/Floquet-1/">
+    <link itemprop="mainEntityOfPage" href="https://zhangpu-git.github.io/test.github.io/2025/03/01/Floquet-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/zhangpu-git.github.io/images/avatar.gif">
+      <meta itemprop="image" content="/test.github.io/images/avatar.gif">
       <meta itemprop="name" content="Zhang Pu">
       <meta itemprop="description" content="">
     </span>
@@ -840,7 +840,7 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://github.com/zhangpu-git.github.io/2025/03/01/Floquet-1/" title="Floquet理论公式推导(一)">https://github.com/zhangpu-git.github.io/2025/03/01/Floquet-1/</a>
+    <a href="https://zhangpu-git.github.io/test.github.io/2025/03/01/Floquet-1/" title="Floquet理论公式推导(一)">https://zhangpu-git.github.io/test.github.io/2025/03/01/Floquet-1/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -851,7 +851,7 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/zhangpu-git.github.io/tags/Floquet/" rel="tag"># Floquet</a>
+              <a href="/test.github.io/tags/Floquet/" rel="tag"># Floquet</a>
           </div>
 
         
@@ -861,7 +861,7 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
     <div class="post-nav">
       <div class="post-nav-item"></div>
       <div class="post-nav-item">
-    <a href="/zhangpu-git.github.io/2025/03/01/model-graphene/" rel="next" title="石墨烯模型">
+    <a href="/test.github.io/2025/03/01/model-graphene/" rel="next" title="石墨烯模型">
       石墨烯模型 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
@@ -934,7 +934,7 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
-          <a href="/zhangpu-git.github.io/archives/">
+          <a href="/test.github.io/archives/">
         
           <span class="site-state-item-count">5</span>
           <span class="site-state-item-name">日志</span>
@@ -948,14 +948,14 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
 </div>
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
-        <a href="https://github.com/zhangpu-git" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;zhangpu-git"><i class="fab fa-github fa-fw"></i>GitHub</a>
+        <a href="https://github.com/zhangpu-git" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;zhangpu-git" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
       </span>
       <span class="links-of-author-item">
         <a href="mailto:2021112059@stu.nwu.edu.cn" title="E-Mail → mailto:2021112059@stu.nwu.edu.cn" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
       </span>
   </div>
   <div class="cc-license motion-element" itemprop="license">
-    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/zhangpu-git.github.io/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/test.github.io/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
   </div>
 
 
@@ -1010,34 +1010,34 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
   </div>
 
   
-  <script src="/zhangpu-git.github.io/lib/anime.min.js"></script>
-  <script src="/zhangpu-git.github.io/lib/velocity/velocity.min.js"></script>
-  <script src="/zhangpu-git.github.io/lib/velocity/velocity.ui.min.js"></script>
+  <script src="/test.github.io/lib/anime.min.js"></script>
+  <script src="/test.github.io/lib/velocity/velocity.min.js"></script>
+  <script src="/test.github.io/lib/velocity/velocity.ui.min.js"></script>
 
-<script src="/zhangpu-git.github.io/js/utils.js"></script>
+<script src="/test.github.io/js/utils.js"></script>
 
-<script src="/zhangpu-git.github.io/js/motion.js"></script>
-
-
-<script src="/zhangpu-git.github.io/js/schemes/muse.js"></script>
+<script src="/test.github.io/js/motion.js"></script>
 
 
-<script src="/zhangpu-git.github.io/js/next-boot.js"></script>
+<script src="/test.github.io/js/schemes/muse.js"></script>
 
 
-  <script defer src="/zhangpu-git.github.io/lib/three/three.min.js"></script>
-    <script defer src="/zhangpu-git.github.io/lib/three/three-waves.min.js"></script>
-    <script defer src="/zhangpu-git.github.io/lib/three/canvas_lines.min.js"></script>
-    <script defer src="/zhangpu-git.github.io/lib/three/canvas_sphere.min.js"></script>
+<script src="/test.github.io/js/next-boot.js"></script>
 
 
-  
-
-
+  <script defer src="/test.github.io/lib/three/three.min.js"></script>
+    <script defer src="/test.github.io/lib/three/three-waves.min.js"></script>
+    <script defer src="/test.github.io/lib/three/canvas_lines.min.js"></script>
+    <script defer src="/test.github.io/lib/three/canvas_sphere.min.js"></script>
 
 
   
-<script src="/zhangpu-git.github.io/js/local-search.js"></script>
+
+
+
+
+  
+<script src="/test.github.io/js/local-search.js"></script>
 
 
 
