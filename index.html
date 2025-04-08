@@ -210,17 +210,23 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2025-03-10 12:37:38 / 修改时间：12:46:34" itemprop="dateCreated datePublished" datetime="2025-03-10T12:37:38+08:00">2025-03-10</time>
+              <time title="创建时间：2025-03-10 12:37:38" itemprop="dateCreated datePublished" datetime="2025-03-10T12:37:38+08:00">2025-03-10</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2025-04-08 17:35:38" itemprop="dateModified" datetime="2025-04-08T17:35:38+08:00">2025-04-08</time>
+              </span>
 
           
             <span class="post-meta-item" title="本文字数">
               <span class="post-meta-item-icon">
                 <i class="far fa-file-word"></i>
               </span>
-              <span>11</span>
+              <span>4</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -238,8 +244,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p><a href="/pdf/a.pdf">下载PPT</a><br />
-<a href="/download/a.pdf">点击下载文件</a></p>
+          <p>1234</p>
 
       
     </div>
@@ -840,6 +845,26 @@
 
 
 
+<script>
+document.querySelectorAll('.pdfobject-container').forEach(element => {
+  let url = element.dataset.target;
+  let pdfOpenParams = {
+    navpanes : 0,
+    toolbar  : 0,
+    statusbar: 0,
+    pagemode : 'thumbs',
+    view     : 'FitH'
+  };
+  let pdfOpenFragment = '#' + Object.entries(pdfOpenParams).map(([key, value]) => `${key}=${encodeURIComponent(value)}`).join('&');
+  let fullURL = `/test.github.io/lib/pdf/web/viewer.html?file=${encodeURIComponent(url)}${pdfOpenFragment}`;
+
+  if (NexT.utils.supportsPDFs()) {
+    element.innerHTML = `<embed class="pdfobject" src="${url + pdfOpenFragment}" type="application/pdf" style="height: ${element.dataset.height};">`;
+  } else {
+    element.innerHTML = `<iframe src="${fullURL}" style="height: ${element.dataset.height};" frameborder="0"></iframe>`;
+  }
+});
+</script>
 
 
 
